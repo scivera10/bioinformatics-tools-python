@@ -1,0 +1,15 @@
+# Python virtual environment
+.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Environment variables
+.env
+
+# Generated BLAST databases
+blast_py/data/database/
+
+# BLAST output files
+*.tsv
