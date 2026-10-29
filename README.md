@@ -1,32 +1,41 @@
 # Bioinformatics Tools in Python
 
-A collection of Python tools for bioinformatics analyses.
+A collection of reusable Python tools for biological sequence analysis, sequence retrieval, quality assessment, and bioinformatics workflows.
 
-This project aims to develop reusable Python functions
-for running bioinformatics software.
+## Overview
 
-## BLAST Tools
+This repository contains modular Python utilities designed to support common bioinformatics tasks.
 
-Python functions for running NCBI BLAST+ locally.
+The tools are developed with an emphasis on code readability, reusability, documentation, and automated testing.
 
-### Available functions
+## Available Tools
 
-- `run_makeblastdb()`: Create a local BLAST database from FASTA sequences.
-- `run_blastn()`: Perform nucleotide sequence searches.
-- `run_blastp()`: Perform protein sequence searches.
+### BLAST Tools (`blast_py/`)
+
+Utilities for running local NCBI BLAST+ searches and managing sequence databases.
+
+### GC Analysis (`gc_analysis/`)
+
+Functions for calculating GC content in nucleotide sequences, including global GC percentages and non-overlapping sequence windows.
+
+### Sequence Download (`sequence_download/`)
+
+Tools for retrieving nucleotide sequences from NCBI using accession identifiers and saving them in FASTA format.
+
+### Sequence Quality (`sequence_quality/`)
+
+Functions for evaluating basic nucleotide sequence quality, including sequence length, ambiguous IUPAC codes, and invalid characters.
 
 ## Requirements
 
 - Python 3
-- NCBI BLAST+ installed and available in the system PATH.
+- Biopython
+- NCBI BLAST+ for BLAST-related tools
 
-## Project Structure
+## Testing
 
-- `blast_py/blast_tools.py`: Python functions for BLAST.
-- `blast_py/data/`: Example FASTA sequences.
+The sequence analysis modules include automated unit tests implemented using Python's `unittest` framework.
 
 ## Development Status
 
-This project is under active development.
-
-Additional bioinformatics tools and functions will be added progressively.
+This repository is under active development. Additional utilities for sequence analysis and bioinformatics workflows will be incorporated progressively.
